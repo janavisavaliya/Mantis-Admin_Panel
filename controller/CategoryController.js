@@ -119,7 +119,7 @@ const changeStatus = async (req, res) => {
             })
             // multiple status change by categoryside
             await SubcategoryModel.updateMany({ categoryId: id }, { $set: { status: status } });
-            await ExSubcategoryModel.updateMany({ categoryId: id }, { $set: { status: status } });
+            await ExsubcategoryModel.updateMany({ categoryId: id }, { $set: { status: status } });
             req.flash("success", "Category successfully update")
             return res.redirect('/category')
         } else {
@@ -128,7 +128,7 @@ const changeStatus = async (req, res) => {
             })
             // multiple status change by categoryside
             await SubcategoryModel.updateMany({ categoryId: id }, { $set: { status: status } });
-            await ExSubcategoryModel.updateMany({ categoryId: id }, { $set: { status: status } });
+            await ExsubcategoryModel.updateMany({ categoryId: id }, { $set: { status: status } });
             req.flash("success", "Category successfully update")
             return res.redirect('/category')
         }
