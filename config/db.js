@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(`mongodb+srv://SaurabhKachhadiya:SaurabhKachhadiya@cluster0.7att4.mongodb.net/admin-panel-other`);
+mongoose.connect(`mongodb://127.0.0.1/Mantis_Admin_Panel`);
 
 const db = mongoose.connection;
 
